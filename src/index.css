@@ -1,0 +1,30 @@
+/* Ensure you are using Tailwind CSS with a proper build tool like PostCSS.
+   The following directives require Tailwind CSS to be installed and configured. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+@layer utilities {
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
+
+ 
+

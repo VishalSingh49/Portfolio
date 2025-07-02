@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal Singh - Personal Portfolio</title>
+    <meta name="description" content="Vishal Singh - Aspiring Entrepreneur, Tech Enthusiast, and E-Cell Core Member. Explore my skills in web development, leadership, and startup innovation.">
+    <meta name="keywords" content="Vishal Singh, entrepreneur, web development, python, leadership, startup, portfolio">
+    <meta name="author" content="Vishal Singh">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vishal Singh - Personal Portfolio">
+    <meta property="og:description" content="Aspiring Entrepreneur | Tech Enthusiast | E-Cell Core Member">
+    <meta property="og:type" content="website">
+    
+    <!-- Preload fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+      /* Custom animations and utilities */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        25% { transform: translateY(-15px) translateX(10px); }
+        50% { transform: translateY(-30px) translateX(0px); }
+        75% { transform: translateY(-15px) translateX(-10px); }
+      }
+      
+      .animation-delay-1000 {
+        animation-delay: 1s;
+      }
+      
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+      
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      .animate-float-slow {
+        animation: floatSlow 8s ease-in-out infinite;
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #06b6d4, #8b5cf6);
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, #0891b2, #7c3aed);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
