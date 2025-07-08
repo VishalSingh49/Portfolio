@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Code, Users, Lightbulb, Calendar, TrendingUp, Phone as Python } from 'lucide-react';
-
+import { Code, Users, Lightbulb, Calendar, TrendingUp  } from 'lucide-react';
+import { SiPython } from 'react-icons/si';
+ 
 const Skills = () => {
   const [activeSkill, setActiveSkill] = useState(0);
   const [rotation, setRotation] = useState(0);
@@ -14,7 +15,7 @@ const Skills = () => {
     },
     {
       name: 'Python',
-      icon: Python,
+      icon: SiPython,
       description: 'Data analysis, automation, and backend development',
       color: 'from-green-400 to-emerald-500'
     },
@@ -37,9 +38,9 @@ const Skills = () => {
       color: 'from-yellow-400 to-orange-500'
     },
     {
-      name: 'Marketing',
+      name: 'DSA',
       icon: TrendingUp,
-      description: 'Digital marketing strategies and brand development',
+      description: 'Data Structures and Algorithms',
       color: 'from-pink-400 to-purple-500'
     }
   ];

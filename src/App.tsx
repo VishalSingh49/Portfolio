@@ -1,10 +1,12 @@
- import Navigation from './components/Navigation';
+import Navigation from './components/Navigation';
+import Follower from './components/follower';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Project from './components/project';
 import ResumeSection from './components/ResumeSection';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <div className="relative z-10">
         <Navigation />
         <main>
+          <Follower />
           <Hero />
           <Skills />
           <Project />

@@ -1,5 +1,4 @@
 import { Project } from '../types';
-
 export const projectsData: Project[] = [
   {
     id: '1',
@@ -34,13 +33,13 @@ export const projectsData: Project[] = [
   },
    
   {
-    id: 'coming-soon',
-    title: 'More Projects Coming Soon',
-    description: 'Exciting new work is in progress. Stay tuned for more!',
-    image: '/coming-soon.jpg', // you can use a placeholder image
-    technologies: [],
-    demoUrl: '',
-    githubUrl: '',
+    id: '4',
+    title: 'I2r Lab Management',
+    description: ' A comprehensive lab management system for I2R, including equipment booking, lab schedules, and user management.',
+    image: './others/i2r.webp',
+    technologies: ['React', 'Node.js', 'MongoDB', ],
+    demoUrl: 'https://i2r-lab-management.example.com',
+    githubUrl: 'https://github.com/wizard1949/i2r-lab-management/tree/master',
     featured: true,
   },
   {

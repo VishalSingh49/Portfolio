@@ -172,6 +172,31 @@ function Projects() {
                       ))}
                     </div>
                   </div>
+                  <div className="flex gap-3 px-4 pb-4">
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition"
+                        title="GitHub"
+                      >
+                        <Github className="w-4 h-4 text-white" />
+                      </a>
+                    )}
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition"
+                        title="Live Demo"
+                      >
+                        <ExternalLink className="w-4 h-4 text-white" />
+                      </a>
+                    )}
+                  </div>
+
                 </motion.div>
               ))
             ) : (
