@@ -20,7 +20,7 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
   const socialLinks = [
-  { icon: Github, url: 'https://github.com/wizard1949' },
+  { icon: Github, url: 'https://github.com/VishalSingh49' },
   { icon: Linkedin, url: 'https://www.linkedin.com/in/vishal-singh-800421323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
   { icon: Instagram, url: 'https://www.instagram.com/half_stone_veins?igsh=MWVlajduNTJxOXE5eg==' },
 ];
